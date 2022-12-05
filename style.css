@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+nav {
+  background-color: rgb(80, 53, 53);
+  color: floralwhite;
+  display: flex;
+  font-size: 25px;
+  height: 60px;
+  align-items: center;
+}
+
+ul {
+  padding-left: 30px;
+  list-style-type: none;
+}
+
+.gameContainer {
+  display: flex;
+  margin-top: 30px;
+  justify-content: center;
+}
+
+.line {
+  background-color: #4e0505;
+  width: 0;
+  height: 3px;
+  position: absolute;
+  transition-property: width;
+  transition-duration: 2s;
+  border-radius: 3px;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: repeat(3, 90px);
+  grid-template-columns: repeat(3, 90px);
+}
+
+.box {
+  border-width: 2px;
+  border-style: solid;
+  border-color: black;
+  /* Can also do border: 2px solid black instead of first 3 lines; */
+  cursor: pointer;
+  font-size: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box:hover {
+  background-color: rgb(245, 240, 240);
+}
+
+.bt-0 {
+  border-top: 0;
+}
+
+.br-0 {
+  border-right: 0;
+}
+
+.bb-0 {
+  border-bottom: 0;
+}
+
+.bl-0 {
+  border-left: 0;
+}
+
+.gameInfo {
+  margin-left: 50px;
+  font-family: "Open Sans", sans-serif;
+}
+
+img {
+  width: 0;
+  transition-property: width;
+  transition-duration: 3s;
+}
+
+#reset {
+  background-color: rgb(245, 240, 240);
+  padding: 6px 12px;
+  border-radius: 6px;
+  margin: 16px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold
+}
+
+@media (width <=800px) {
+  .gameContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .gameInfo {
+    margin-top: 30px;
+    margin-left: 0;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  .imgbox {
+    display: flex;
+    justify-content: center;
+  }
+}
