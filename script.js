@@ -45,8 +45,8 @@ const checkWin = () => {
       document.querySelector(".line").style.width = myStyle.width;
       document.querySelector(".line").style.translate = myStyle.translate;
       document.querySelector(".line").style.rotate = myStyle.rotate;
-      // Line 49 to Line 53 is just a way of styling the line. Can use these lines(49 to 53) instead of myStyle obj
-      // and lines 44 to 46
+      // Line 50 to Line 54 is just a way of styling the line. Can use these lines(50 to 54) instead of myStyle obj
+      // and lines 45 to 47
       // document.querySelector(".line").style.width = "245px";
       // document.querySelector(".line").style.translate = e[3] + 'px' + ' ' + e[4] + 'px';
       // document.querySelector(".line").style.translate = `${e[3]}px ${e[4]}px`;
